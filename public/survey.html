@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey</title>
+    <!-- Link to the jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link href="survey-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="survey-questions">
+                    <div class="main-center">
+                        <h1>Survey!</h1>
+
+                        <div>
+                            <h2>Name</h2>
+                            <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+                        </div>
+                        <div class="input-field col s6">
+                            <h3>Image</h3>
+                            <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+                        </div>
+                        <!-- Survey Questions -->
+                        <div>
+                            <h3>Question 1</h3>
+                            <h4>Do you like to play sports?</h4>
+                            <select id="question1">
+                                <option value="" disabled selected>Choose an option!</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3>Question 2</h3>
+                            <h4>Do you like Kansas City Chiefs?</h4>
+                            <select id="question2">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <h3>Question 3</h3>
+                            <h4>Is Patrick Mahomes your favorite player?</h4>
+                            <select id="question3">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 4</h3>
+                            <h4>Is Travis Kelce the best TD in the NFL?</h4>
+                            <select id="question4">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 5</h3>
+                            <h>Is Tyreek Hill the fastest player in the NFL?</h>
+                            <select id="question5">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 6</h3>
+                            <h4>Will the Chiefs make the playoffs?</h4>
+                            <select id="question6">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 7</h3>
+                            <h4>I think Arrowhead is the loudest stadium!</h4>
+                            <select id="question7">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 8</h3>
+                            <h4>The Chiefs will win the Super bowl!</h4>
+                            <select id="question8">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 9</h3>
+                            <h4>Patrick Mahomes willbe the MVP for 2020!</h4>
+                            <select id="question9">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <h3>Question 10</h3>
+                            <h4>I don't like the Raiders!</h4>
+                            <select id="question10">
+                                <option value="" disabled selected>Choose an option</option>
+                                <option value="1">1 (Disagree)</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Agree)</option>
+                            </select>
+                        </div>
+
+                        <!-- Survey Submit Button -->
+                        <div>
+                            <button class="btn-primary" type="trigger" name="action" id="submitButton"
+                                data-toggle="modal" data-target="#myModal">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
